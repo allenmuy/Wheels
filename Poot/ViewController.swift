@@ -37,7 +37,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         present(pickerController, animated: true, completion: nil)
     }
-    //UIimageController Fns
+    //UIimageController Fns for Picture Gallery
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
     }
@@ -47,14 +47,49 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func doneButtonTapped(_ sender: Any) {
+
+    @IBAction func doneTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+
     }
     
-    //This button updates and saves the profile
+    /*
     @IBAction func saveProfile(_ sender: Any) {
-    //    let profileImageData = UIImageJPEGRepresentation(profileImage.image, 1}
+        let profileImageData = UIImageJPEGRepresentation(profileImage.image!, 1)
+
+    }
+    */
+    @IBAction func saveTapped(_ sender: Any) {
+        
+        if ((firstNameField.text == "")&&(lastNameField.text == "")&&(passwordField.text == "")&&(repeatpasswordField.text == ""))
+        {
+            createAlert(title: "Empty Fields", message: "Fields cannot be empty.")
+        }else{
+            performSegue(withIdentifier: "update", sender: self)
+
+        }
+        
+    }
     
+    //Danny* Create Alert Function
+    
+    func createAlert(title:String, message:String)
+    {
+        let emptyAlert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        
+        let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: {(action) in emptyAlert.dismiss(animated: true, completion: nil)})
+        emptyAlert.addAction(okAction);
+        self.present(emptyAlert, animated: true, completion:nil)
+
+    }
+    
+    //Segue functions
+    //prepare update segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var profileViewController = segue.destination as! ProfileViewController
+        profileViewController.firstNamestr = firstNameField.text!
+        //profileViewController.firstNamestr = lastNameField.text!
+
     }
     
     override func viewDidLoad() {
