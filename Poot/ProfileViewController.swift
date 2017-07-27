@@ -17,6 +17,7 @@ class ProfileViewController: UIViewController {
     
     //label variables
     var firstNamestr = String()
+    var lastNamestr = String()
     //label objects
     @IBOutlet weak var firstName: UILabel!
     
@@ -29,7 +30,7 @@ class ProfileViewController: UIViewController {
         
         //labels
         firstName.text = firstNamestr
-        
+        lastName.text = lastNamestr
         
         //Danny*
         //Profile Image Frame Edit
