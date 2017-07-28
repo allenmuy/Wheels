@@ -23,15 +23,14 @@ class ProfileViewController: UIViewController {
     var lastNamestr = "LastName"
     var aboutMestr = "This is me."
     //label and textview objects
+    @IBOutlet weak var aboutMe: UITextView!
     @IBOutlet weak var firstName: UILabel!
     @IBOutlet weak var lastName: UILabel!
-    @IBOutlet weak var aboutMe: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
         //labels
         loadUserDetails()
         
