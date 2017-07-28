@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		308E1B381F2A982B000CF921 /* OverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308E1B371F2A982B000CF921 /* OverViewController.swift */; };
+		308E1B3B1F2AA2FD000CF921 /* Recycle Logo White.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 308E1B3A1F2AA2FD000CF921 /* Recycle Logo White.jpg */; };
+		308E1B3F1F2AA9C6000CF921 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308E1B3E1F2AA9C6000CF921 /* PopupViewController.swift */; };
+		308E1B411F2ABF1E000CF921 /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308E1B401F2ABF1E000CF921 /* ContainerController.swift */; };
+		30E422891F2AD16B005F3067 /* gmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30E422881F2AD16B005F3067 /* gmap.jpg */; };
 		E9EC4ED01F26B17A00DACB58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EC4ECF1F26B17A00DACB58 /* AppDelegate.swift */; };
-		E9EC4ED21F26B17A00DACB58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EC4ED11F26B17A00DACB58 /* ViewController.swift */; };
+		E9EC4ED21F26B17A00DACB58 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EC4ED11F26B17A00DACB58 /* EditViewController.swift */; };
 		E9EC4ED51F26B17B00DACB58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9EC4ED31F26B17B00DACB58 /* Main.storyboard */; };
 		E9EC4ED71F26B17B00DACB58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9EC4ED61F26B17B00DACB58 /* Assets.xcassets */; };
 		E9EC4EDA1F26B17B00DACB58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9EC4ED81F26B17B00DACB58 /* LaunchScreen.storyboard */; };
 		E9EC4EE51F26B17B00DACB58 /* PootTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EC4EE41F26B17B00DACB58 /* PootTests.swift */; };
 		E9EC4EF01F26B17B00DACB58 /* PootUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EC4EEF1F26B17B00DACB58 /* PootUITests.swift */; };
-		E9F2F7221F28255700E51D7E /* genji-concept.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9F2F7211F28255700E51D7E /* genji-concept.jpg */; };
 		E9F5913D1F27E16200F8F9EB /* cree.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9F5913C1F27E16200F8F9EB /* cree.jpg */; };
 		E9F591791F27FADC00F8F9EB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F591781F27FADC00F8F9EB /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
@@ -37,9 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		308E1B371F2A982B000CF921 /* OverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverViewController.swift; sourceTree = "<group>"; };
+		308E1B3A1F2AA2FD000CF921 /* Recycle Logo White.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Recycle Logo White.jpg"; path = "../../../../Downloads/Recycle Logo White.jpg"; sourceTree = "<group>"; };
+		308E1B3E1F2AA9C6000CF921 /* PopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		308E1B401F2ABF1E000CF921 /* ContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
+		30E422881F2AD16B005F3067 /* gmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gmap.jpg; path = "Supporting Files/gmap.jpg"; sourceTree = "<group>"; };
 		E9EC4ECC1F26B17A00DACB58 /* Poot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9EC4ECF1F26B17A00DACB58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E9EC4ED11F26B17A00DACB58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E9EC4ED11F26B17A00DACB58 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		E9EC4ED41F26B17B00DACB58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9EC4ED61F26B17B00DACB58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9EC4ED91F26B17B00DACB58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,7 +59,6 @@
 		E9EC4EEB1F26B17B00DACB58 /* PootUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PootUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9EC4EEF1F26B17B00DACB58 /* PootUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PootUITests.swift; sourceTree = "<group>"; };
 		E9EC4EF11F26B17B00DACB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9F2F7211F28255700E51D7E /* genji-concept.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "genji-concept.jpg"; path = "../../../Downloads/genji-concept.jpg"; sourceTree = "<group>"; };
 		E9F5913C1F27E16200F8F9EB /* cree.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cree.jpg; path = "Supporting Files/cree.jpg"; sourceTree = "<group>"; };
 		E9F591781F27FADC00F8F9EB /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		308E1B391F2AA2E4000CF921 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				308E1B3A1F2AA2FD000CF921 /* Recycle Logo White.jpg */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 		E9EC4EC31F26B17A00DACB58 = {
 			isa = PBXGroup;
 			children = (
@@ -104,14 +120,18 @@
 			isa = PBXGroup;
 			children = (
 				E9F5913C1F27E16200F8F9EB /* cree.jpg */,
-				E9F2F7211F28255700E51D7E /* genji-concept.jpg */,
+				30E422881F2AD16B005F3067 /* gmap.jpg */,
 				E9EC4ECF1F26B17A00DACB58 /* AppDelegate.swift */,
 				E9EC4ED31F26B17B00DACB58 /* Main.storyboard */,
-				E9EC4ED11F26B17A00DACB58 /* ViewController.swift */,
+				308E1B401F2ABF1E000CF921 /* ContainerController.swift */,
+				308E1B3E1F2AA9C6000CF921 /* PopupViewController.swift */,
+				308E1B371F2A982B000CF921 /* OverViewController.swift */,
+				E9EC4ED11F26B17A00DACB58 /* EditViewController.swift */,
 				E9F591781F27FADC00F8F9EB /* ProfileViewController.swift */,
 				E9EC4ED61F26B17B00DACB58 /* Assets.xcassets */,
 				E9EC4ED81F26B17B00DACB58 /* LaunchScreen.storyboard */,
 				E9EC4EDB1F26B17B00DACB58 /* Info.plist */,
+				308E1B391F2AA2E4000CF921 /* Icons */,
 			);
 			path = Poot;
 			sourceTree = "<group>";
@@ -241,10 +261,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9F2F7221F28255700E51D7E /* genji-concept.jpg in Resources */,
 				E9EC4EDA1F26B17B00DACB58 /* LaunchScreen.storyboard in Resources */,
 				E9EC4ED71F26B17B00DACB58 /* Assets.xcassets in Resources */,
+				308E1B3B1F2AA2FD000CF921 /* Recycle Logo White.jpg in Resources */,
 				E9F5913D1F27E16200F8F9EB /* cree.jpg in Resources */,
+				30E422891F2AD16B005F3067 /* gmap.jpg in Resources */,
 				E9EC4ED51F26B17B00DACB58 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,9 +291,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				308E1B3F1F2AA9C6000CF921 /* PopupViewController.swift in Sources */,
 				E9F591791F27FADC00F8F9EB /* ProfileViewController.swift in Sources */,
-				E9EC4ED21F26B17A00DACB58 /* ViewController.swift in Sources */,
+				E9EC4ED21F26B17A00DACB58 /* EditViewController.swift in Sources */,
+				308E1B381F2A982B000CF921 /* OverViewController.swift in Sources */,
 				E9EC4ED01F26B17A00DACB58 /* AppDelegate.swift in Sources */,
+				308E1B411F2ABF1E000CF921 /* ContainerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

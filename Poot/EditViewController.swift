@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  EditViewController.swift
 //  Poot
 //
 //  Created by Danny on 7/24/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class EditViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     //test image
     let image = UIImage(named: "cree.jpg")
@@ -19,6 +19,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     //Danny* Created ImageView from Storyboard editor
     //image objects
     @IBOutlet weak var profileImage: UIImageView!
+    
+    //reference to view controllers
+    var profileviewReference: ProfileViewController!
     
     //textfield objects
     
@@ -47,25 +50,20 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         dismiss(animated: true, completion: nil)
     }
     
-
-    @IBAction func doneTapped(_ sender: Any) {
+    @IBAction func cancelTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
-
     }
     
-    /*
-    @IBAction func saveProfile(_ sender: Any) {
-        let profileImageData = UIImageJPEGRepresentation(profileImage.image!, 1)
-
-    }
-    */
     @IBAction func saveTapped(_ sender: Any) {
         
         if ((firstNameField.text == "")&&(lastNameField.text == "")&&(passwordField.text == "")&&(repeatpasswordField.text == ""))
         {
             createAlert(title: "Empty Fields", message: "Fields cannot be empty.")
         }else{
-            performSegue(withIdentifier: "update", sender: self)
+            profileviewReference.firstNamestr = firstNameField.text!
+            profileviewReference.lastNamestr = lastNameField.text!
+            self.dismiss(animated: true, completion: {() -> Void in self.profileviewReference.loadUserDetails()})
+            //performSegue(withIdentifier: "update", sender: self)
 
         }
         
@@ -85,13 +83,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     //Segue functions
     //prepare update segue
+    /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var profileViewController = segue.destination as! ProfileViewController
-        profileViewController.firstNamestr = firstNameField.text!
-        //profileViewController.firstNamestr = lastNameField.text!
+        var profileEditViewController = segue.destination as! ProfileEditViewController
+        profileEditViewController.firstNamestr = firstNameField.text!
+        profileEditViewController.lastNamestr = lastNameField.text!
 
     }
-    
+     */    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

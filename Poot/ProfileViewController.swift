@@ -16,8 +16,8 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var profileImage: UIImageView!
     
     //label variables
-    var firstNamestr = String()
-    var lastNamestr = String()
+    var firstNamestr = "FirstName"
+    var lastNamestr = "LastName"
     //label objects
     @IBOutlet weak var firstName: UILabel!
     
@@ -29,8 +29,7 @@ class ProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //labels
-        firstName.text = firstNamestr
-        lastName.text = lastNamestr
+        loadUserDetails()
         
         //Danny*
         //Profile Image Frame Edit
@@ -46,6 +45,24 @@ class ProfileViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //Button functions
+    @IBAction func editTapped(_ sender: Any) {
+        var editProfile = self.storyboard?.instantiateViewController(withIdentifier: "EditViewController") as! EditViewController
+        editProfile.profileviewReference = self
+        
+        let editProfileNav = UINavigationController(rootViewController: editProfile)
+        self.present(editProfileNav, animated: true, completion: nil)
+    }
+
+    @IBAction func backTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    func loadUserDetails()
+    {
+        firstName.text = firstNamestr
+        lastName.text = lastNamestr
     }
     
 }
