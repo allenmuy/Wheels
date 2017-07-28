@@ -27,8 +27,7 @@ class EditViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     @IBOutlet weak var firstNameField: UITextField!
     @IBOutlet weak var lastNameField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
-    @IBOutlet weak var repeatpasswordField: UITextField!
+    @IBOutlet weak var aboutMeField: UITextView!
     
     //Button Objects
 
@@ -56,21 +55,23 @@ class EditViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     @IBAction func saveTapped(_ sender: Any) {
         
-        if ((firstNameField.text == "")&&(lastNameField.text == "")&&(passwordField.text == "")&&(repeatpasswordField.text == ""))
+        if ((firstNameField.text != ""))
         {
-            createAlert(title: "Empty Fields", message: "Fields cannot be empty.")
-        }else{
             profileviewReference.firstNamestr = firstNameField.text!
+        }
+        if (lastNameField.text != ""){
             profileviewReference.lastNamestr = lastNameField.text!
-            self.dismiss(animated: true, completion: {() -> Void in self.profileviewReference.loadUserDetails()})
-            //performSegue(withIdentifier: "update", sender: self)
+        }
+        if(aboutMeField.text != "")
+        {
 
         }
+        self.dismiss(animated: true, completion: {() -> Void in self.profileviewReference.loadUserDetails()})
+        //performSegue(withIdentifier: "update", sender: self)
         
     }
     
     //Danny* Create Alert Function
-    
     func createAlert(title:String, message:String)
     {
         let emptyAlert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)

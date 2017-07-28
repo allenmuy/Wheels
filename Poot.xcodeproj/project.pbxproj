@@ -12,6 +12,7 @@
 		308E1B3F1F2AA9C6000CF921 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308E1B3E1F2AA9C6000CF921 /* PopupViewController.swift */; };
 		308E1B411F2ABF1E000CF921 /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308E1B401F2ABF1E000CF921 /* ContainerController.swift */; };
 		30E422891F2AD16B005F3067 /* gmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30E422881F2AD16B005F3067 /* gmap.jpg */; };
+		30E4228B1F2AD870005F3067 /* genji.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30E4228A1F2AD870005F3067 /* genji.jpg */; };
 		E9EC4ED01F26B17A00DACB58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EC4ECF1F26B17A00DACB58 /* AppDelegate.swift */; };
 		E9EC4ED21F26B17A00DACB58 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EC4ED11F26B17A00DACB58 /* EditViewController.swift */; };
 		E9EC4ED51F26B17B00DACB58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9EC4ED31F26B17B00DACB58 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		308E1B3E1F2AA9C6000CF921 /* PopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		308E1B401F2ABF1E000CF921 /* ContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
 		30E422881F2AD16B005F3067 /* gmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gmap.jpg; path = "Supporting Files/gmap.jpg"; sourceTree = "<group>"; };
+		30E4228A1F2AD870005F3067 /* genji.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = genji.jpg; path = "Supporting Files/genji.jpg"; sourceTree = "<group>"; };
 		E9EC4ECC1F26B17A00DACB58 /* Poot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9EC4ECF1F26B17A00DACB58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9EC4ED11F26B17A00DACB58 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				E9F5913C1F27E16200F8F9EB /* cree.jpg */,
+				30E4228A1F2AD870005F3067 /* genji.jpg */,
 				30E422881F2AD16B005F3067 /* gmap.jpg */,
 				E9EC4ECF1F26B17A00DACB58 /* AppDelegate.swift */,
 				E9EC4ED31F26B17B00DACB58 /* Main.storyboard */,
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9EC4EDA1F26B17B00DACB58 /* LaunchScreen.storyboard in Resources */,
+				30E4228B1F2AD870005F3067 /* genji.jpg in Resources */,
 				E9EC4ED71F26B17B00DACB58 /* Assets.xcassets in Resources */,
 				308E1B3B1F2AA2FD000CF921 /* Recycle Logo White.jpg in Resources */,
 				E9F5913D1F27E16200F8F9EB /* cree.jpg in Resources */,

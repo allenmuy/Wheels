@@ -12,16 +12,20 @@ class ProfileViewController: UIViewController {
 
     //test image
     let image = UIImage(named: "cree.jpg")
+    
+    //reference object
+    
     //image object
     @IBOutlet weak var profileImage: UIImageView!
     
     //label variables
     var firstNamestr = "FirstName"
     var lastNamestr = "LastName"
-    //label objects
+    var aboutMestr = "This is me."
+    //label and textview objects
     @IBOutlet weak var firstName: UILabel!
-    
     @IBOutlet weak var lastName: UILabel!
+    @IBOutlet weak var aboutMe: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,6 +67,7 @@ class ProfileViewController: UIViewController {
     {
         firstName.text = firstNamestr
         lastName.text = lastNamestr
+        aboutMe.text = aboutMestr
     }
     
 }
