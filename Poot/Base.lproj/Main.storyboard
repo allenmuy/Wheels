@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A264c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Gnr-2j-Fpu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A264c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WFq-Yc-VlD">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -147,6 +147,25 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLL-Kh-krd" customClass="RoundButton" customModule="Poot" customModuleProvider="target">
+                                        <rect key="frame" x="159" y="112" width="55" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.27926057577133179" green="0.70932382345199585" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="wheels logo bg">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="27.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showPopip:" destination="Gnr-2j-Fpu" eventType="touchUpInside" id="9bV-y1-G4F"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.84611581609999997" green="0.85656169039999996" blue="0.85656169039999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -163,14 +182,6 @@
                                 <color key="tintColor" red="0.84679335359999997" green="0.85478776690000002" blue="0.85481470820000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="barTintColor" red="0.99992352724075317" green="1" blue="0.99988299608230591" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tabBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLL-Kh-krd">
-                                <rect key="frame" x="160" y="585" width="55" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.27926057577133179" green="0.70932382345199585" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UPCOMING TRIP: TripNum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Hb-R9-g5a">
                                 <rect key="frame" x="16" y="446" width="137" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -184,7 +195,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fhw-5G-pJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-674" y="-797"/>
+            <point key="canvasLocation" x="-674.39999999999998" y="-797.45127436281871"/>
         </scene>
         <!--OverView 2-->
         <scene sceneID="SpP-ae-sKn">
@@ -263,13 +274,24 @@
                                 <color key="tintColor" red="0.84679335355758667" green="0.85478776693344116" blue="0.85481470823287964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="barTintColor" red="0.96855324506759644" green="0.96866911649703979" blue="0.96851390600204468" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tabBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bd-kR-Zkw">
-                                <rect key="frame" x="160" y="585" width="55" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bd-kR-Zkw" customClass="RoundButton" customModule="Poot" customModuleProvider="target">
+                                <rect key="frame" x="160" y="583" width="55" height="55"/>
                                 <color key="backgroundColor" red="0.28034570684952986" green="0.70947509885988169" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="Rfs-mf-NLZ"/>
+                                    <constraint firstAttribute="height" constant="55" id="hwR-OJ-SdP"/>
+                                </constraints>
+                                <state key="normal" image="wheels logo bg">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="showPopup:" destination="WFq-Yc-VlD" eventType="touchUpInside" id="nc0-0N-ieo"/>
                                 </connections>
@@ -287,6 +309,10 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5ou-fg-IFm" firstAttribute="top" secondItem="1bd-kR-Zkw" secondAttribute="bottom" constant="29" id="Fek-Uw-Ioi"/>
+                            <constraint firstItem="1bd-kR-Zkw" firstAttribute="centerX" secondItem="WA6-Jn-8zq" secondAttribute="centerX" id="Ies-e1-A4e"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="gimage" destination="jT2-Ki-0Vc" id="lvJ-pJ-GCM"/>
@@ -401,11 +427,14 @@
                                 </items>
                                 <color key="barTintColor" red="0.99992352724075317" green="1" blue="0.99988299608230591" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tabBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCe-Rz-E1d">
-                                <rect key="frame" x="160" y="585" width="55" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCe-Rz-E1d">
+                                <rect key="frame" x="160" y="583" width="55" height="55"/>
                                 <color key="backgroundColor" red="0.27893063426017761" green="0.71299284696578979" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="bH9-mo-teT"/>
+                                    <constraint firstAttribute="height" constant="55" id="tzO-Xo-ppN"/>
+                                </constraints>
+                                <state key="normal" image="wheels logo bg">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -449,6 +478,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wUo-ip-VNX" firstAttribute="top" secondItem="YCe-Rz-E1d" secondAttribute="bottom" constant="29" id="8zw-fu-ngQ"/>
+                            <constraint firstItem="YCe-Rz-E1d" firstAttribute="centerX" secondItem="Xga-X3-Pf2" secondAttribute="centerX" id="ZOy-eg-v4T"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="profileImage" destination="wVh-6a-wD2" id="QHg-w7-FWw"/>
@@ -478,4 +511,7 @@
             <point key="canvasLocation" x="1655" y="-797"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="wheels logo bg" width="99" height="99"/>
+    </resources>
 </document>
